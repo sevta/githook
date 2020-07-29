@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "eslint": "^7.5.0",
-    "husky": "^4.2.5",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0"
   },
@@ -10,5 +9,8 @@
       "pre-commit": "npm test",
       "pre-push": "npm test"
     }
+  },
+  "devDependencies": {
+    "husky": "^4.2.5"
   }
 }
