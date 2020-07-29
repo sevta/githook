@@ -1,7 +1,13 @@
 {
   "dependencies": {
+    "eslint": "^7.5.0",
     "husky": "^4.2.5",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
   }
 }
