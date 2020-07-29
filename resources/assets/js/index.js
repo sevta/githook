@@ -6,8 +6,6 @@ class Okay {
   constructor() {
     this.settings = {};
   }
-
   init() {}
-
   set() {}
 }
