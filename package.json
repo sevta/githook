@@ -1,16 +1,27 @@
 {
   "dependencies": {
     "eslint": "^7.5.0",
+    "lint-staged": "^10.2.11",
+    "prettier-eslint": "^11.0.0",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0"
   },
+  "scripts": {
+    "lint:fix": "eslint **/*.js"
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test",
+      "pre-commit": "npm run lint:fix",
       "pre-push": "npm test"
     }
   },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix"
+    ]
+  },
   "devDependencies": {
-    "husky": "^4.2.5"
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5"
   }
 }
