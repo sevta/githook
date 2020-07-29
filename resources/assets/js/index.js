@@ -8,4 +8,6 @@ class Okay {
   }
 
   init() {}
+
+  set() {}
 }

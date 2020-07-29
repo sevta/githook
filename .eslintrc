@@ -1,3 +1,10 @@
 {
-  "extends": "eslint:recommended"
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "tules": {
+    "prettier/perttier": ["error"]
+  }
 }
